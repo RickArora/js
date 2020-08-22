@@ -34,3 +34,27 @@ e.addTrick('t4 new');
 console.log(e);
 
 // Function Invocation
+
+let ellie = new Elephant("Ellie", 185, ["giving human friends a ride", "playing hide and seek"]);
+let charlie = new Elephant("Charlie", 200, ["painting pictures", "spraying water for a slip and slide"]);
+let kate = new Elephant("Kate", 234, ["writing letters", "stealing peanuts"]);
+let micah = new Elephant("Micah", 143, ["trotting", "playing tic tac toe", "doing elephant ballet"]);
+
+let herd = [ellie, charlie, kate, micah];
+
+function paradeHelper(el) {
+    console.log(`${el.name} is walking by`);
+}
+
+herd.forEach(el => paradeHelper(el));
+
+// Closures
+
+// comes back to this later
+function bfastOrder(param) {
+    `I'd like a ${param}`
+}
+
+let bfastOrder = dinerBreakfast();
+bfastOrder('choc chip pancakes');
+bfastOrder('grits');
